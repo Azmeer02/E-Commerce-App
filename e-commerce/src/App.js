@@ -1,18 +1,26 @@
 import React from 'react';
+import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './Components/Home';
-import Login from './Components/Login';
-import SignUp from './Components/SignUp';
+import MainPage from './Main Page/mainPage';
+import Login from './Main Page/Login';
+import SignUp from './Main Page/SignUp';
+import { AuthProvider } from './Context/AuthContext';
 
 function App(){
   return(
-    <Router>
-      <Routes>
-        <Route path="" element={<Home/>}/>
-        {/* <Route path="login" element={<Login/>}/>
-        <Route path="signup" element={<SignUp/>}/> */}
-      </Routes>
-    </Router>
+    <Container className="d-flex align-items-center justify-content-center" style={{minHeight: "100vh"}}>
+      <div className="w-100" style={{maxWidth: "475px"}}>
+        <Router>
+          <AuthProvider>
+            <Routes>
+              <Route path="" element={<MainPage/>}/>
+              <Route path="login" element={<Login/>}/>
+              <Route path="signup" element={<SignUp/>}/>
+            </Routes>
+          </AuthProvider>
+        </Router>
+      </div>
+    </Container>
   );
 }
 
