@@ -17,15 +17,15 @@ function Login(){
             setError('');
             setLoading(true);
             await login(emailRef.current.value , passwordRef.current.value);
-            // navigate('/home');
+            navigate('/home');
         }catch{
             setError("No Account Found!")
         }
         setLoading(false);
     }
     return (
-        <>
-            <Card>
+        <div className="w-100" style={{maxWidth: "475px" , marginTop: "115px" , marginLeft: "325px"}}>
+            <Card className="d-flex justify-content-center">
                 <Card.Body>
                 <h1 className="text-center mb-4">Log In</h1>
                     {error && <Alert variant="danger">{error}</Alert>} 
@@ -45,7 +45,7 @@ function Login(){
                     </div>
                 </Card.Body>
             </Card>
-        </>
+        </div>
     )
 }
 

@@ -1,0 +1,20 @@
+.navigation{
+    margin-left: -125px;
+    width: 1357px;
+    height: 140px;
+    background-color: rgb(48, 46, 39);
+    position: relative;
+}
+
+.navigation img{
+    position: absolute;
+    margin-top: -112px;
+    margin-left: -20px;
+}
+
+.body{
+    margin-left: -125px;
+    width: 1357px;
+    height: 500px;
+    background-color: rgb(59, 53, 52);
+}

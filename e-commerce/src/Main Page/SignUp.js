@@ -28,8 +28,8 @@ function SignUp(){
         setLoading(false);
     }
     return (
-        <>
-            <Card>
+        <div className="w-100" style={{maxWidth: "475px" , marginTop: "115px" , marginLeft: "325px"}}>
+            <Card className="d-flex justify-content-center">
                 <Card.Body>
                 <h1 className="text-center mb-4">Sign Up</h1>
                     {error && <Alert variant="danger">{error}</Alert>} 
@@ -53,7 +53,7 @@ function SignUp(){
             <div className="w-100 text-center mt-2">
                 Already have an account? <Link to="/login">Login</Link>
             </div>
-        </>
+        </div>
     )
 }
 
