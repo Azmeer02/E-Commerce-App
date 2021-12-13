@@ -4,6 +4,7 @@ import "firebase/compat/auth";
 const app = firebase.initializeApp({
     apiKey: "AIzaSyD6PNmZOXOg19MGLXJz-ZyR-x8kAII5B34",
     authDomain: "e-commerce-auth-3bd56.firebaseapp.com",
+    databaseURL: "https://e-commerce-auth-3bd56-default-rtdb.firebaseio.com",
     projectId: "e-commerce-auth-3bd56",
     storageBucket: "e-commerce-auth-3bd56.appspot.com",
     messagingSenderId: "212170172586",

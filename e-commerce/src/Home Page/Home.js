@@ -2,22 +2,17 @@ import React, { useEffect, useState } from 'react';
 import logo from './logo.jpg';
 import logo2 from './logo2.png'
 import './home.css';
-import {database} from '../firebaseStore';
-import {collection, getDocs} from 'firebase/firestore';
+import fireDB from '../firebaseStore'
 import { Avatar } from '@mui/material';
 import { Button , Card} from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 
 function Home(){
-    const [ad , setAd] = useState([]);
-    const userCollection = collection(database , "Ads")
+    // const [] = useState()
     useEffect(()=>{
-        async function getAd(){
-            const data = await getDocs(userCollection);
-            setAd(data.docs.map((doc) => ({...doc.data(), id: doc.id})))
-            // console.log(data);
-        };
-        getAd();
+        fireDB.child("Ads").on("value" , (snapshot)=>{
+            
+        })
     },[])
     return (
         <>
@@ -83,7 +78,7 @@ function Home(){
                     <Button variant="primary" style={{float: "right" , width: "100px"}}>Buy Now</Button>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem' , marginLeft: "40px" , marginTop: "25px" , float: "left"}}>
+            {/* <Card style={{ width: '18rem' , marginLeft: "40px" , marginTop: "25px" , float: "left"}}>
                 <Card.Img variant="top" src={logo} />
                 <Card.Body>
                     <Card.Title>Product 5</Card.Title>
@@ -104,7 +99,7 @@ function Home(){
                     <Button variant="outline-primary">View Product</Button>
                     <Button variant="primary" style={{float: "right" , width: "100px"}}>Buy Now</Button>
                 </Card.Body>
-            </Card>
+            </Card> */}
         </div>
         </>
     )
