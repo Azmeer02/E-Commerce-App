@@ -1,0 +1,24 @@
+.navigation3{
+    margin-left: -125px;
+    width: 1357px;
+    height: 70px;
+    background-color: rgb(48, 46, 39);
+    position: relative;
+}
+
+.navigation3 img{
+    position: absolute;
+    margin-top: -93px;
+    margin-left: -20px;
+}
+
+.navigation3 h2{
+    position: absolute;
+    margin-left: 532px;
+    margin-top: 15px;
+}
+
+.body{
+    height: 700px;
+    width: 1357px;
+}
