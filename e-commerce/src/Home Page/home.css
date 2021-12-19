@@ -1,20 +1,5 @@
-.navigation{
-    margin-left: -125px;
-    width: 1357px;
-    height: 140px;
-    background-color: rgb(48, 46, 39);
-    position: relative;
-}
-
-.navigation img{
-    position: absolute;
-    margin-top: -93px;
-    margin-left: -20px;
-}
-
-.body{
-    margin-left: -125px;
-    width: 1357px;
-    height: 500px;
-    background-color: rgb(59, 53, 52);
+.ads{
+    width: 1116px;
+    height: 800px;
+    background-color: rgb(223, 235, 235);
 }
