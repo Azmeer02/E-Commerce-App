@@ -108,7 +108,7 @@ function Ad() {
                             value={data.address} name="address" onChange={handleChange} />
                     </Form.Group>
                     <Button onClick={handleSubmit} variant="primary" style={{ float: "right" }}>Post Ad</Button>
-                </Form>
+                </Form> 
             </div>
         </>
     )

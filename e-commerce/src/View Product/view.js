@@ -4,12 +4,14 @@ import { getDatabase, ref, onValue, remove } from "firebase/database";
 import { Paper } from "@mui/material";
 import { Carousel,Button,Navbar,Container,Nav,Form,FormControl } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
+import {Link} from 'react-router-dom';
 
 function View() {
     const [data, setData] = useState();
     const router = useLocation();
     const { product , productId } = router.state;
-    console.log(productId);
+        console.log(productId);
+
     useEffect(() => {
         const db = getDatabase();
         const DataRef = ref(db, "userAds/");
@@ -35,6 +37,7 @@ function View() {
     }
     return (
         <div>
+            <div>
             <Navbar bg="light" expand="lg">
                 <Container fluid>
                 <Navbar.Brand href="#">Product Details</Navbar.Brand>
@@ -43,7 +46,7 @@ function View() {
                     <Nav className="me-auto my-2 my-lg-0" style={{ maxHeight: '100px' }} navbarScroll>
                         <Nav.Link href="/home">Back To Home</Nav.Link>
                         <Nav.Link href="/home" onClick={() => deleteData(productId[0])}>Delete Product?</Nav.Link>
-                        <Nav.Link href="/update">Update Product</Nav.Link>
+                        {/* <Nav.Link href="/update"  state={{product: product, productId: productId}}>Update Product</Nav.Link> */}
                     </Nav>
                     <Form className="d-flex">
                         <FormControl type="search" placeholder="Search" className="me-2" aria-label="Search" />
@@ -52,6 +55,7 @@ function View() {
                 </Navbar.Collapse>
                 </Container>
             </Navbar>
+            </div>
             <div>
                 {data && Object.entries(data).map(item => (<></>))}
                 <Carousel>
@@ -76,6 +80,10 @@ function View() {
                     <h2 style={{textAlign: "center"}}>Product Price: {product.price}</h2>
                     <h2 style={{textAlign: "center"}}>Seller Address: {product.address}</h2>
                 </Paper>
+            </div>
+            <div>
+                <Link to='/update/' state={{ product: product, productId: productId }}>
+                    <Button variant="outline-primary">Update Product</Button></Link>
             </div>
         </div>
     )
