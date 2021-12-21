@@ -1,7 +1,7 @@
 import React , {useEffect, useState} from 'react'
 import { Navbar,Container,Nav,Form,FormControl } from 'react-bootstrap';
 import {Button,TextField,Dialog,DialogActions,DialogContent,DialogContentText,DialogTitle} from '@mui/material';
-import { getDatabase , update , ref, push, child } from 'firebase/database';
+import { getDatabase , update , ref } from 'firebase/database';
 import { useLocation } from "react-router-dom";
 
 function Update(){
@@ -14,15 +14,9 @@ function Update(){
     const handleUpdateChange = (e) => {
         const { name, value } = e.target;
             setupdatedValues({ ...updatedValues, [name]: value });
-        // let Updatedname = e.target.name;
-        // let UpdatedValue = e.target.value;
-        //     setupdatedValues({ ...updatedValues, [Updatedname]: UpdatedValue })
-            // console.log("updated values= " + updatedValues);
-            // console.log("event =" + e.target.value);
     }
 
     useEffect(()=>{
-        console.log("hello");
         setupdatedValues({description: product?.description, price: product?.price , photos: product?.photos , address: product?.address})
     },[product])
     const handleClickOpen = () => {
@@ -33,7 +27,7 @@ function Update(){
     };
     function updateAd(e){
         e.preventDefault();
-        console.log(updatedValues)
+        // console.log(updatedValues)
         const db = getDatabase();
         update(ref(db, 'userAds/' + productId),updatedValues)
             .then(() => {
