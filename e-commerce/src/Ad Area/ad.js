@@ -14,7 +14,6 @@ function Ad() {
     };
     async function handleSubmit(e) {
         e.preventDefault();
-
         const { description, price, address } = data;
         if (description && price && photos && address) {
             let temp = [];

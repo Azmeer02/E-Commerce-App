@@ -1,5 +1,103 @@
 .ads{
-    width: 1116px;
-    height: 800px;
-    background-color: rgb(223, 235, 235);
+    /* height: 800px; */
+    /* background-color: rgb(223, 235, 235); */
+    /* background-color: rgb(207, 212, 212); */
+    padding: 10px
+}
+
+.search{
+    height: 85px;
+}
+
+.search input{
+    width: 550px;
+    height: 45px;
+    /* margin-left: 10px; */
+    border-radius: 5px; 
+    border: 1px solid darkgrey;
+}
+
+.image img{
+    width: 100%;
+}
+
+input.MuiInputBase-input {
+    padding-left: 20px;
+}
+
+.footer{
+    width: 1115px;
+    height: 200px;
+    /* margin: 0 auto; */
+    background-color: rgb(230, 240, 240);
+}
+
+.heading ul{
+    display: flex;
+}
+
+.heading ul li{
+    margin-top: 20px;
+    list-style: none;
+    width: 225px;
+    font-weight: 500;
+}
+
+.categories ul li{
+    list-style: none;
+}
+
+.searches ul{
+    margin-top: -112px;
+    margin-left: 218px;
+}
+
+.searches ul li{
+    list-style: none;
+}
+
+.about ul{
+    margin-top: -112px;
+    margin-left: 433px;
+}
+
+.about ul li{
+    list-style: none;
+}
+
+.olx ul{
+    margin-top: -112px;
+    margin-left: 647px;
+}
+
+.olx ul li{
+    list-style: none;
+}
+
+.follow{
+    margin-left: 898px;
+    margin-top: -111px;
+}
+
+.facebook{
+    font-size: 25px;
+    color: grey;
+}
+
+.twitter{
+    font-size: 25px;
+    margin-left: 10px;
+    color: grey;
+}
+
+.youtube{
+    font-size: 25px;
+    margin-left: 10px;
+    color: grey;
+}
+
+.instagram{
+    font-size: 25px;
+    margin-left: 10px;
+    color: grey;
 }
