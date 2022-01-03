@@ -56,6 +56,8 @@
   font-size: 30px;
 }
 
+
+
 @media only screen and (max-width: 1600px) {
   .drop {
     max-width: 30%;
@@ -189,7 +191,7 @@
   padding: 10px;
 }
 
-.image img {
+.image img{
   width: 100%;
 }
 
@@ -205,9 +207,14 @@ input.MuiInputBase-input {
   background-color: rgb(230, 240, 240);
 }
 
+.heading{
+  margin-top: 15px;
+  font-weight: 600;
+  font-size: 18px;
+}
+
 .categories{
   width: 250px;
-  /* border: 1px solid black; */
 }
 
 .categories ul{
@@ -216,13 +223,11 @@ input.MuiInputBase-input {
 }
 
 .categories ul li{
-  /* border: 1px solid black; */
   list-style: none;
 }
 
 .searches{
   width: 250px;
-  /* border: 1px solid black; */
 }
 
 .searches ul{
@@ -231,13 +236,11 @@ input.MuiInputBase-input {
 }
 
 .searches ul li{
-  /* border: 1px solid black; */
   list-style: none;
 }
 
 .about{
   width: 250px;
-  /* border: 1px solid black; */
 }
 
 .about ul{
@@ -246,13 +249,11 @@ input.MuiInputBase-input {
 }
 
 .about ul li{
-  /* border: 1px solid black; */
   list-style: none;
 }
 
 .olx{
   width: 250px;
-  /* border: 1px solid black; */
 }
 
 .olx ul{
@@ -261,13 +262,11 @@ input.MuiInputBase-input {
 }
 
 .olx ul li{
-  /* border: 1px solid black; */
   list-style: none;
 }
 
 .follow{
   width: 250px;
-  /* border: 1px solid black; */
 }
 
 .follow ul{
@@ -276,6 +275,36 @@ input.MuiInputBase-input {
 }
 
 .follow ul li{
-  /* border: 1px solid black; */
   list-style: none;
+}
+
+.first-li{
+  margin-top: 10px;
+}
+
+.facebook{
+  font-size: 27px;
+  color: darkgrey;
+  margin-top: 10px;
+}
+
+.twitter{
+  font-size: 27px;
+  margin-left: 10px;
+  color: darkgrey;
+  margin-top: 10px;
+}
+
+.youtube{
+  font-size: 27px;
+  margin-left: 10px;
+  color: darkgrey;
+  margin-top: 10px;
+}
+
+.instagram{
+  font-size: 27px;
+  margin-left: 10px;
+  color: darkgrey;
+  margin-top: 10px;
 }

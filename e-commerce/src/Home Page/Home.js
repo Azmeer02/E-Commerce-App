@@ -64,9 +64,7 @@ function Home() {
                 <MenuItem value={70}>Sindh, Pakistan</MenuItem>
               </Select>
             </FormControl>
-          {/* <div className="drop">   
-          </div> */}
-          <div className="sell">
+        <div className="sell">
           <InputBase className="search" sx={{ ml: 1, flex: 1 }} placeholder="Find Cars, Mobile Phones and more..."
             inputProps={{ 'aria-label': 'search google maps' }} style={{ backgroundColor: "white" }} />
           <IconButton type="submit" sx={{ p: '10px' }} aria-label="search">
@@ -80,7 +78,7 @@ function Home() {
       </div>
     </div><br/>
     {/* Navigation End */}
-    <div className="container">
+    {/* <div className="container"> */}
       <div className="image">
         <img src={logo2} alt="cover" />
       </div><br />
@@ -114,12 +112,12 @@ function Home() {
         </Box>
       </div><br />
     {/* Card End */}  
-    </div>
+    {/* </div> */}
     <div className="footer">
         <div className="categories">
           <ul>
-            <li>POPULAR CATEGORIES</li>
-            <li>Cars</li>
+            <li className="heading">POPULAR CATEGORIES</li>
+            <li className="first-li">Cars</li>
             <li>Flats for rent</li>
             <li>Mobile Phones</li>
             <li>Jobs</li>            
@@ -127,8 +125,8 @@ function Home() {
         </div>
         <div className="searches">
           <ul>
-          <li>TRENDING SEARCHES</li>
-            <li>Cars</li>
+          <li className="heading">TRENDING SEARCHES</li>
+            <li className="first-li">Cars</li>
             <li>Flats for rent</li>
             <li>Mobile Phones</li>
             <li>Jobs</li>
@@ -136,8 +134,8 @@ function Home() {
         </div>
         <div className="about">
           <ul>
-            <li>ABOUT US</li>
-            <li>Cars</li>
+            <li className="heading">ABOUT US</li>
+            <li className="first-li">Cars</li>
             <li>Flats for rent</li>
             <li>Mobile Phones</li>
             <li>Jobs</li>
@@ -145,8 +143,8 @@ function Home() {
         </div>
         <div className="olx">
           <ul>
-            <li>OLX</li>
-            <li>Cars</li>
+            <li className="heading">OLX</li>
+            <li className="first-li">Cars</li>
             <li>Flats for rent</li>
             <li>Mobile Phones</li>
             <li>Jobs</li>
@@ -154,7 +152,7 @@ function Home() {
         </div>
         <div className="follow">
           <ul>
-            <li>Follow Us</li>
+            <li className="heading">Follow Us</li>
             <FontAwesomeIcon icon={faFacebookSquare} className="facebook" />
             <FontAwesomeIcon icon={faTwitterSquare} className="twitter" />
             <FontAwesomeIcon icon={faYoutubeSquare} className="youtube" />

@@ -80,7 +80,7 @@ function View() {
                     <h2 style={{textAlign: "center"}}>Product Price: {product.price}</h2>
                     <h2 style={{textAlign: "center"}}>Seller Address: {product.address}</h2>
                 </Paper>
-            </div>
+            </div><br/>
             <div>
                 <Link to='/update/' state={{ product: product, productId: productId }}>
                     <Button variant="outline-primary">Update Product</Button></Link>
