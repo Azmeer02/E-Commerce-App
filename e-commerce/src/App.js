@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container } from 'react-bootstrap';
+// import { Container } from 'react-bootstrap';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import MainPage from './Main Page/mainPage';
 import Login from './Main Page/Login';
@@ -12,7 +12,7 @@ import { AuthProvider } from './Context/AuthContext';
 
 function App(){
   return(
-    <Container>
+    // <Container>
         <Router>
           <AuthProvider>
             <Routes>
@@ -26,7 +26,7 @@ function App(){
             </Routes>
           </AuthProvider>
         </Router>
-    </Container>
+    // </Container>
   );
 }
 

@@ -1,103 +1,281 @@
-.ads{
-    /* height: 800px; */
-    /* background-color: rgb(223, 235, 235); */
-    /* background-color: rgb(207, 212, 212); */
-    padding: 10px
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
 }
 
-.search{
-    height: 85px;
+.header {
+  width: 100%;
+  height: 125px;
+  background-color: #f7f8f8;
+  justify-content: space-between;
 }
 
-.search input{
-    width: 550px;
-    height: 45px;
-    /* margin-left: 10px; */
-    border-radius: 5px; 
-    border: 1px solid darkgrey;
+.nav-top {
+  width: 100%;
+  padding-top: 10px;
 }
 
-.image img{
+.nav-bottom {
+  width: 100%;
+  padding-top: 15px;
+  display: flex;
+}
+.drop {
+  /* width: 100%; */
+  /* max-width: 250px; */
+  background-color: white;
+}
+
+.dropdown {
+  /* margin-top: 10px !important; */
+  background-color: white;
+  width: 30%;
+}
+
+.sell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.search input {
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid darkgrey;
+}
+
+.searchIcon {
+  color: darkgrey;
+}
+
+.uploadIcon {
+  margin-left: 30px;
+}
+
+.postLink {
+  text-decoration: none;
+  font-size: 30px;
+}
+
+@media only screen and (max-width: 1600px) {
+  .drop {
+    max-width: 30%;
+  }
+  /* .dropdown {
+    max-width: 400px;
+  } */
+}
+
+@media only screen and (max-width: 1400px) {
+  .drop {
+    max-width: 25%;
+  }
+  /* .dropdown {
+    max-width: 325px;
+  } */
+}
+
+@media only screen and (max-width: 1200px) {
+  .drop {
+    max-width: 20%;
+  }
+  /* .dropdown {
+    max-width: 200px;
+  } */
+}
+
+@media only screen and (max-width: 1100px) {
+  .header {
     width: 100%;
+  }
+  /* .dropdown {
+    max-width: 250px;
+  } */
+}
+
+@media only screen and (max-width: 991px) {
+  .header {
+    width: 100%;
+  }
+  /* .dropdown {
+    max-width: 175px;
+  } */
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    width: 100%;
+    height: 185px;
+  }
+
+  .drop {
+    margin-top: 10px;
+    max-width: 50%;
+  }
+
+  .dropdown {
+    width: 65%;
+    /* height: 30px !important; */
+    margin-top: 10px !important;
+  }
+  .MuiSelect-select {
+    padding: 10px !important;
+  }
+
+  .search {
+    margin-top: 10px;
+    width: 310px;
+  }
+
+  .search input {
+    height: 30px;
+  }
+
+  .css-piqts5-MuiInputBase-root {
+    margin-left: 0px !important;
+  }
+  .nav-bottom {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .searchIcon {
+    font-size: 5px;
+  }
+  .product-btn {
+    width: 100%;
+  }
+  .buy-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+/* @media only screen and (max-width: 539px) {
+  .header {
+    width: 100%;
+  }
+  .dropdown {
+    width: 100%;
+  }
+  .search {
+    width: 257px;
+  }
+  .search input.MuiInputBase-input {
+    padding-left: 5px;
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  .uploadIcon {
+    margin-left: 0px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  .dropdown {
+    width: 250px;
+  }
+  .uploadIcon {
+    font-size: 5px;
+  }
+  .postLink {
+    font-size: 20px;
+  }
+} */
+
+.ads {
+  padding: 10px;
+}
+
+.image img {
+  width: 100%;
 }
 
 input.MuiInputBase-input {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
-.footer{
-    width: 1115px;
-    height: 200px;
-    /* margin: 0 auto; */
-    background-color: rgb(230, 240, 240);
+.footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: rgb(230, 240, 240);
 }
 
-.heading ul{
-    display: flex;
+.categories{
+  width: 250px;
+  /* border: 1px solid black; */
 }
 
-.heading ul li{
-    margin-top: 20px;
-    list-style: none;
-    width: 225px;
-    font-weight: 500;
+.categories ul{
+  padding: 0;
+  float: left;
 }
 
 .categories ul li{
-    list-style: none;
+  /* border: 1px solid black; */
+  list-style: none;
+}
+
+.searches{
+  width: 250px;
+  /* border: 1px solid black; */
 }
 
 .searches ul{
-    margin-top: -112px;
-    margin-left: 218px;
+  padding: 0;
+  float: left;
 }
 
 .searches ul li{
-    list-style: none;
+  /* border: 1px solid black; */
+  list-style: none;
+}
+
+.about{
+  width: 250px;
+  /* border: 1px solid black; */
 }
 
 .about ul{
-    margin-top: -112px;
-    margin-left: 433px;
+  padding: 0;
+  float: left;
 }
 
 .about ul li{
-    list-style: none;
+  /* border: 1px solid black; */
+  list-style: none;
+}
+
+.olx{
+  width: 250px;
+  /* border: 1px solid black; */
 }
 
 .olx ul{
-    margin-top: -112px;
-    margin-left: 647px;
+  padding: 0;
+  float: left;
 }
 
 .olx ul li{
-    list-style: none;
+  /* border: 1px solid black; */
+  list-style: none;
 }
 
 .follow{
-    margin-left: 898px;
-    margin-top: -111px;
+  width: 250px;
+  /* border: 1px solid black; */
 }
 
-.facebook{
-    font-size: 25px;
-    color: grey;
+.follow ul{
+  padding: 0;
+  float: left;
 }
 
-.twitter{
-    font-size: 25px;
-    margin-left: 10px;
-    color: grey;
-}
-
-.youtube{
-    font-size: 25px;
-    margin-left: 10px;
-    color: grey;
-}
-
-.instagram{
-    font-size: 25px;
-    margin-left: 10px;
-    color: grey;
+.follow ul li{
+  /* border: 1px solid black; */
+  list-style: none;
 }
